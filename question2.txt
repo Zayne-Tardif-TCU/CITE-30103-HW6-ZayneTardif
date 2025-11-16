@@ -1,0 +1,26 @@
+Question 2 – How a C Program Becomes an Executable
+
+1) Preprocessing  
+   This is the stage where all #include and #define statements get taken care of.  
+   Header files are pulled in and macros are expanded to prepare the code for the compiler.  
+   Possible error: using #include for a file that doesn’t exist.
+
+2) Compilation  
+   The compiler checks the C code for mistakes and converts it into assembly code.  
+   This is where syntax errors, type errors, or missing semicolons show up.  
+   Possible error: undeclared variables or incorrect syntax.
+
+3) Assembly  
+   The assembly code produced by the compiler is turned into machine code inside an object file.  
+   This step is simple and easy with a lot less detail involved. 
+   Possible error: corrupted assembly output or invalid instruction formats.
+
+4) Linking  
+   The linker combines your object file with required libraries (like printf from stdio).  
+   It makes one final executable program.  
+   Possible error: “undefined reference” when a function is used but not found.
+
+5) Loading  
+   The operating system loads the executable into memory and prepares it to run main().  
+   This is the last step before your program starts.  
+   Possible error: file permission issues or the executable not being found.
