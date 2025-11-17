@@ -1,0 +1,14 @@
+Question 6 – Identifier Naming Errors
+
+1) int 1value = 10;
+   This is invalid because an identifier cannot start with a number. 
+   A correct version would be: int value1 = 10;
+
+2) float avg-rate = 12.5;
+   This is invalid because you cannot use a hyphen in a variable name. 
+   A correct version would be: float avg_rate = 12.5;
+
+3) char Class = 'A';
+   This compiles, but it's not good style because C is case sensitive and 
+   using capitalized names can conflict with common type names. 
+   A simpler fix is: char classVar = 'A';
