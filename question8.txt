@@ -1,0 +1,7 @@
+Question 8 – Global and Local Scope
+
+In this program, globalNum is a global variable because it is declared outside of main. 
+localNum is a local variable because it is declared inside main.
+
+The global variable can be used anywhere in the file, while the local variable only works 
+inside the function where it was created.
