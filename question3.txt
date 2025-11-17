@@ -1,0 +1,12 @@
+Question 3 
+
+If I remove #include <stdio.h> from a program that calls printf, the compiler no longer
+knows the proper declaration for printf. This would then cause a problem in the compiling stage as it doesn't know what it's working on.
+
+The compiler will usually give a message like:
+“warning: implicit declaration of function ‘printf’” or
+“error: ‘printf’ undeclared (first use in this function)”.
+
+So the program fails at the compilation stage because printf is defined in the stdio.h
+header file and the compiler cannot find its declaration. Which is why it's crucial to have it as it's what keeps the compiling stage working.
+
