@@ -1,0 +1,16 @@
+Question 12 – Operator Precedence Problem
+
+The code used: res = a + b << 1;
+The problem is that the << operator has higher precedence than +.
+So the expression is evaluated as: a + (b << 1)
+
+This is not what the writer of the code was expecting. They thought it'd just go in order of left to right which would be 
+(a + b) << 1.
+
+There's two correct ways the writer could fix it:
+
+1) Use parentheses:
+   res = (a + b) << 1;
+
+2) Use normal arithmetic instead of bit shifting:
+   res = (a + b) * 2;
